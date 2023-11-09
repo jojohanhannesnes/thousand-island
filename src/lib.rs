@@ -1,1 +1,4 @@
+#![allow(dead_code)]
+
 mod euler;
+mod utils;
