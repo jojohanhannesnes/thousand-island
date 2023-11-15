@@ -1,11 +1,3 @@
-// // https://projecteuler.net/problem=5
-// 1 2 3 4 5 6 7 8 9 10 =  2520 => 1 5 7 8 9
-// 1..20 = ?? => 20 eliminate
-// if x can be divided by 10, then it can be divided by 5, so we take 5, remove 10
-// 2 4 6 8, if dividable by 8 then its dividable by 2, but we can't take 2,
-// since it's possible that the number can have remainder if divided by 8
-// example is 20
-
 use std::collections::BTreeMap;
 
 use crate::utils::list_of_prime_factor;

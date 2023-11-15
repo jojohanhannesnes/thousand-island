@@ -1,7 +1,3 @@
-fn main() {
-    summation_of_primes(2_000_000);
-}
-
 pub fn sieve_of_eratosthenes(limit: usize) -> Vec<usize> {
     let mut is_prime = vec![true; limit];
     is_prime[0] = false;
@@ -18,8 +14,11 @@ pub fn sieve_of_eratosthenes(limit: usize) -> Vec<usize> {
     (2..limit).filter(|&x| is_prime[x]).collect()
 }
 
-fn summation_of_primes(limit: usize) {
-    let primes = sieve_of_eratosthenes(limit);
-    let x = primes.iter().sum::<usize>();
-    dbg!(x);
+fn summation_of_primes(limit: usize) -> usize {
+    sieve_of_eratosthenes(limit).iter().sum::<usize>()
+}
+
+#[test]
+fn test() {
+    assert_eq!(summation_of_primes(2_000_000), 142913828922)
 }

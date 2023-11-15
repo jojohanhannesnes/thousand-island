@@ -18,3 +18,7 @@ pub fn list_of_prime_factor(mut input: i64) -> Vec<i64> {
 
     res
 }
+
+pub fn is_prime(number: &usize) -> bool {
+    (2..*number).all(|x| number % x != 0)
+}

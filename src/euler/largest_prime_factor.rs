@@ -1,5 +1,3 @@
-// https://projecteuler.net/problem=3
-
 fn largest_prime_factor(mut input: i64) -> i64 {
     let mut start: i64 = 2; // first prime number
     let mut res = Vec::new();
