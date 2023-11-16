@@ -20,5 +20,12 @@ fn summation_of_primes(limit: usize) -> usize {
 
 #[test]
 fn test() {
+    use std::time::Instant;
+    let start_time = Instant::now();
+    let result = summation_of_primes(2_000_000);
+    let elapsed_time = start_time.elapsed();
+
+    println!("Result: {}", result);
+    println!("Time taken: {:?}", elapsed_time);
     assert_eq!(summation_of_primes(2_000_000), 142913828922)
 }

@@ -16,7 +16,7 @@ fn prime_10001() -> usize {
 }
 
 fn prime_10001_sieve() -> i32 {
-    const LIMIT: usize = 150_000;
+    const LIMIT: usize = 10001;
     let mut sieve = vec![true; LIMIT];
     let mut count = 0;
 
@@ -24,7 +24,7 @@ fn prime_10001_sieve() -> i32 {
         if sieve[num] {
             count += 1;
 
-            if count == 10_001 {
+            if count == 10001 {
                 return num as i32;
             }
 
