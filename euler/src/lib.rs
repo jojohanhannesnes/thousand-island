@@ -1,6 +1,7 @@
 pub mod even_fib_numbers;
 pub mod largest_palindrome_product;
 pub mod largest_prime_factor;
+pub mod largest_product_in_grid;
 pub mod multiple_3_or_5;
 pub mod prime_10001;
 pub mod smallest_multiple;
