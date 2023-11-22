@@ -1,3 +1,4 @@
+pub mod anagram;
 pub mod armstrong_numbers;
 pub mod beer_song;
 pub mod clock;
@@ -8,5 +9,7 @@ pub mod hello_world;
 pub mod kindergarten_garden;
 pub mod leap;
 pub mod nth_prime;
+pub mod prime_factors;
 pub mod reverse_string;
 pub mod series;
+pub mod sublist;
