@@ -1,4 +1,4 @@
-fn largest_palindrome_3_digit() -> i32 {
+pub fn largest_palindrome_3_digit() -> i32 {
     let mut test: Vec<i32> = Vec::new();
     for i in 900..=999 {
         for y in i..=999 {
@@ -20,6 +20,6 @@ fn largest_palindrome_3_digit() -> i32 {
 }
 
 #[test]
-fn test() {
+fn it_works() {
     assert_eq!(largest_palindrome_3_digit(), 906609);
 }

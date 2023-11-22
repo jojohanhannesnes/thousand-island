@@ -1,4 +1,4 @@
-fn special_pythagorean_triplet() -> i32 {
+pub fn special_pythagorean_triplet() -> i32 {
     for a in 1..1000 {
         for b in a + 1..1000 {
             let c = 1000 - (a + b);
@@ -11,6 +11,6 @@ fn special_pythagorean_triplet() -> i32 {
 }
 
 #[test]
-fn test() {
+fn it_works() {
     assert_eq!(special_pythagorean_triplet(), 31875000);
 }

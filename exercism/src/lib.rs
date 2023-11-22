@@ -1,0 +1,12 @@
+pub mod armstrong_numbers;
+pub mod beer_song;
+pub mod clock;
+pub mod difference_of_squares;
+pub mod gigasecond;
+pub mod grains;
+pub mod hello_world;
+pub mod kindergarten_garden;
+pub mod leap;
+pub mod nth_prime;
+pub mod reverse_string;
+pub mod series;

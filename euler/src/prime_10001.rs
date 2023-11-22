@@ -1,6 +1,6 @@
-use crate::utils::is_prime;
+use utils::prime::is_prime;
 
-fn prime_10001() -> usize {
+pub fn prime_10001() -> usize {
     let mut counter = 0;
     let mut result = 0;
     for i in 2..=usize::MAX {
@@ -15,7 +15,7 @@ fn prime_10001() -> usize {
     result
 }
 
-fn prime_10001_sieve() -> i32 {
+pub fn prime_10001_sieve() -> i32 {
     const LIMIT: usize = 10001;
     let mut sieve = vec![true; LIMIT];
     let mut count = 0;
@@ -41,10 +41,10 @@ fn prime_10001_sieve() -> i32 {
 mod tests {
     use std::time::Instant;
 
-    use crate::euler::prime_10001::{is_prime, prime_10001, prime_10001_sieve};
+    use crate::prime_10001::{is_prime, prime_10001, prime_10001_sieve};
 
     #[test]
-    fn get_10001_prime() {
+    fn get_prime_10001() {
         let start_time = Instant::now();
         let result = prime_10001();
         let elapsed_time = start_time.elapsed();
@@ -55,7 +55,7 @@ mod tests {
     }
 
     #[test]
-    fn get_10001_prime_sieve() {
+    fn get_prime_10001_sieve() {
         let start_time = Instant::now();
         let result = prime_10001_sieve();
         let elapsed_time = start_time.elapsed();

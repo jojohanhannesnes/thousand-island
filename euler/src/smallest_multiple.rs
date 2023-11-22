@@ -1,8 +1,8 @@
 use std::collections::BTreeMap;
 
-use crate::utils::list_of_prime_factor;
+use utils::prime::list_of_prime_factor;
 
-fn smallest_multiple() -> u32 {
+pub fn smallest_multiple() -> u32 {
     let mut db = BTreeMap::new();
     for i in 1..20 {
         let prime_factors = list_of_prime_factor(i);
@@ -24,6 +24,6 @@ fn smallest_multiple() -> u32 {
 }
 
 #[test]
-fn test() {
+fn it_works() {
     assert_eq!(smallest_multiple(), 232792560);
 }

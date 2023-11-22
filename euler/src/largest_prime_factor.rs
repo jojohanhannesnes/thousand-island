@@ -1,6 +1,4 @@
-pub mod fib;
-
-pub fn list_of_prime_factor(mut input: i64) -> Vec<i64> {
+pub fn largest_prime_factor(mut input: i64) -> i64 {
     let mut start: i64 = 2; // first prime number
     let mut res = Vec::new();
     // sqrt(32) = 2 * 2 sqrt(8) -> 2,  2 * 2 sqrt(2) -> 2 * 2 , sqrt(2)
@@ -16,9 +14,10 @@ pub fn list_of_prime_factor(mut input: i64) -> Vec<i64> {
         res.push(input); // last number inside the square root
     }
 
-    res
+    res.last().unwrap().to_owned()
 }
 
-pub fn is_prime(number: &usize) -> bool {
-    (2..*number).all(|x| number % x != 0)
+#[test]
+fn it_works() {
+    assert_eq!(largest_prime_factor(600851475143), 6857)
 }

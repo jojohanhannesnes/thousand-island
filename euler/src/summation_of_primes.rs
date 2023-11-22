@@ -14,7 +14,7 @@ pub fn sieve_of_eratosthenes(limit: usize) -> Vec<usize> {
     (2..limit).filter(|&x| is_prime[x]).collect()
 }
 
-fn summation_of_primes(limit: usize) -> usize {
+pub fn summation_of_primes(limit: usize) -> usize {
     sieve_of_eratosthenes(limit).iter().sum::<usize>()
 }
 
