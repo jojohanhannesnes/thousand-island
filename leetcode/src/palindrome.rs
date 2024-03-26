@@ -1,4 +1,4 @@
-fn is_palindrome(x: i32) -> bool {
+pub fn is_palindrome(x: i32) -> bool {
     let digits = x.to_string();
     let length = digits.len();
     println!(
@@ -21,9 +21,9 @@ fn is_palindrome(x: i32) -> bool {
 }
 
 mod tests {
-    use super::is_palindrome;
     #[test]
     fn is_palindromes() {
+        use super::is_palindrome;
         assert!(is_palindrome(1001));
     }
 }
