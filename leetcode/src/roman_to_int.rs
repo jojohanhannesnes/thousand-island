@@ -1,4 +1,4 @@
-fn roman_to_int(s: String) -> i32 {
+pub fn roman_to_int(s: String) -> i32 {
     let mut total = 0;
     let mut roman = s.chars().peekable();
     while let Some(c) = roman.next() {
