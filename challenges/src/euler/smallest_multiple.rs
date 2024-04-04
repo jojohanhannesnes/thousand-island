@@ -1,6 +1,6 @@
 use std::collections::BTreeMap;
 
-use utils::prime::list_of_prime_factor;
+use algorithms::prime::list_of_prime_factor;
 
 pub fn smallest_multiple() -> u32 {
     let mut db = BTreeMap::new();

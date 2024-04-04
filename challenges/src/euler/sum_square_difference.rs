@@ -6,7 +6,7 @@ pub fn sum_square_difference(limit: i32) -> i32 {
 
 #[cfg(test)]
 mod tests {
-    use crate::sum_square_difference::sum_square_difference;
+    use crate::euler::sum_square_difference::sum_square_difference;
 
     #[test]
     fn test_1_to_10() {

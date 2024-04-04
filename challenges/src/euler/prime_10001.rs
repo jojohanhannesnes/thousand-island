@@ -1,4 +1,4 @@
-use utils::prime::is_prime;
+use algorithms::prime::is_prime;
 
 pub fn prime_10001() -> usize {
     let mut counter = 0;
@@ -41,7 +41,7 @@ pub fn prime_10001_sieve() -> i32 {
 mod tests {
     use std::time::Instant;
 
-    use crate::prime_10001::{is_prime, prime_10001, prime_10001_sieve};
+    use super::*;
 
     #[test]
     fn get_prime_10001() {

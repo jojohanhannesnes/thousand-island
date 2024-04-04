@@ -1,4 +1,4 @@
-use utils::fibonnaci::Fibonacci;
+use algorithms::fibonnaci::Fibonacci;
 
 pub fn even_fib_numbers(limit: usize) -> usize {
     let mut fib = Fibonacci::new(limit);
