@@ -1,3 +1,4 @@
+pub mod happy_number;
 pub mod index_of_the_first_occurence;
 pub mod longest_common_prefix;
 pub mod palindrome;
