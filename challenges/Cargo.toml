@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 algorithms = { path = "../algorithms" }
 time = "0.3.0"
+rand = "0.8"
