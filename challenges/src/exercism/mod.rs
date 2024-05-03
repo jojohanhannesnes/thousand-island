@@ -8,6 +8,7 @@ pub mod grains;
 pub mod hello_world;
 pub mod kindergarten_garden;
 pub mod leap;
+pub mod minesweeper;
 pub mod nth_prime;
 pub mod prime_factors;
 pub mod reverse_string;
