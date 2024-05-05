@@ -2,6 +2,7 @@ pub mod contains_duplicate;
 pub mod group_anagrams;
 pub mod happy_number;
 pub mod index_of_the_first_occurence;
+pub mod kids_with_candies;
 pub mod longest_common_prefix;
 pub mod longest_consecutive_sequence;
 pub mod palindrome;
