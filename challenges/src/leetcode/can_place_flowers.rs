@@ -21,7 +21,7 @@ pub fn can_place_flowers(flowerbed: Vec<i32>, n: i32) -> bool {
 
 #[cfg(test)]
 mod tests {
-    use crate::exercism::can_place_flowers::can_place_flowers;
+    use crate::leetcode::can_place_flowers::can_place_flowers;
 
     #[test]
     pub fn it_works() {

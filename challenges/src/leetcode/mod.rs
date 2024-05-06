@@ -1,3 +1,4 @@
+pub mod can_place_flowers;
 pub mod contains_duplicate;
 pub mod group_anagrams;
 pub mod happy_number;
@@ -8,6 +9,7 @@ pub mod longest_consecutive_sequence;
 pub mod palindrome;
 pub mod product_of_array_except_self;
 pub mod remove_duplicates_sorted_array;
+pub mod reverse_vowels_of_a_string;
 pub mod roman_to_int;
 pub mod search_insert_position;
 pub mod sum_of_left_leaves;
