@@ -1,6 +1,7 @@
 pub mod anagram;
 pub mod armstrong_numbers;
 pub mod beer_song;
+pub mod can_place_flowers;
 pub mod clock;
 pub mod difference_of_squares;
 pub mod gigasecond;
